@@ -1,3 +1,10 @@
+/**
+ * Name: Course Calendar
+ * Type: Script for the Google Calendar App
+ * Description: Generates calendar events for lectures, exams and assignments.
+ * Author: Eirik Skogstad
+ */
+
 /* Globals */
 var MON = CalendarApp.Weekday.MONDAY;
 var TUE = CalendarApp.Weekday.TUESDAY;
