@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>What's on tonight?</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="movies.js"></script>
+	<script src="sorting.js"></script>
+</head>
+<body>
+	<center>
+		<div id="movies">
+		<h1>Today's Menu</h1>
+		<script>
+		movies.sort(sortByTomatoScore);
+
+		for (i=0; i<movies.length; i++){
+			var title = movies[i].Title;
+			var genre = movies[i].Genre;
+			var time = movies[i].Time;
+			var channel = movies[i].Channels[0].Channel+" "+movies[i].Channels[0].Network;
+
+			document.write('<div class="movie">\
+								<div class="title">'+title+'</div>\
+								<div class="info">\
+									<div class="genre">'+genre+'</div>\
+									<div class="showinfo">at '+time+' on '+channel+'</div>\
+								</div>\
+							</div>');
+		}
+		</script>		
+		</div>
+	</center>
+</body>
+</html>
