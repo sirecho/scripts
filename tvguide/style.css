@@ -1,0 +1,19 @@
+#movies {
+	width: 50%;
+	background-color: #ffffcc;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.movie {
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 30px;
+	width: 50%;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
